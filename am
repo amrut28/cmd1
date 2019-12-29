@@ -1,0 +1,47 @@
+Lab Instructions for installing Docker in CentOS
+****************************************************************************************************************************
+Steps for installing Docker on Ubuntu  Virtual Machine on AWS
+
+Link for installing Docker 
+https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
+
+
+
+Steps for starting and running Docker on Ubuntu Virtual Machine on AWS
+
+
+# sudo systemctl start docker 
+# sudo systemctl status docker
+# sudo systemctl enable docker
+# sudo docker images
+# sudo docker ps			Lists running containers. 
+# sudo docker pull hello-world		Most of your images will be created on top of a base image from the Docker Hub registry.
+# sudo docker images			
+# sudo docker run hello-world
+
+# sudo docker container ls --all	List all containers runningus
+# sudo docker container --help
+_____________________________________________________________________________________________________________________________
+
+Lab Instructions for pulling Readymade container images from Docker Hub
+		     Starting Containers with the help of Docker Container service
+		     Testing Applications running inside container
+
+
+sudo
+a. Pull and Run nginx Image from Docker Hub
+
+     	#sudo docker pull nginx
+	
+	#sudo docker run --name webserver -d -p 8080:80 nginx:latest
+	
+	Access  url http://your external id address:8080  in  your client Browser  to invoke Web Application
+
+
+b. Pull Angular app Image from Rahul Navale's Docker hub images galary
+
+	#sudo docker pull rahulsn/ng
+
+	sudo docker run --name rnserver -d -p 8888:80 rahulsn/ng
+
+	Access  url http://your external id address:8888  in  your client Browser  to invoke Web Application
